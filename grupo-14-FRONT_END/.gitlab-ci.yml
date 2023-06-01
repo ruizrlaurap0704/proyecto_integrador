@@ -1,0 +1,40 @@
+
+stages:          
+  - build
+  - deploy
+
+build_backend: 
+  only:
+    refs:
+      - BACK-END      
+  stage: build
+  image: maven:latest
+  script:
+      - cd Api_G_14
+      - echo "Building app..."
+      - maven clean install
+      - echo "Finished building the app."
+  artifacts:
+      expire_in: 1 week
+      paths:
+          - Api_G_14/target/grupo-14-0.0.1-SNAPSHOT.jar
+
+build_frontend: 
+  only:
+    refs:
+      - FRONT_END      
+  stage: build
+  image: node:latest
+  script:
+      - cd grupo-14-BACK-END
+      - cd Api_G_14
+      - echo "Building app..."
+      - maven clean install
+      - echo "Finished building the app."
+  artifacts:
+      expire_in: 1 week
+      paths:
+          - grupo-14-BACK-END/Api_G_14/target/grupo-14-0.0.1-SNAPSHOT.jar
+ 
+
+

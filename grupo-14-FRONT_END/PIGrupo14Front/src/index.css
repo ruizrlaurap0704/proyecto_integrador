@@ -1,0 +1,3571 @@
+html{
+  scroll-behavior: smooth;
+}
+main{
+  margin: 0;
+  background-color:  #EBEBEE;
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  margin: 0;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+}
+
+.hamb{
+  display: none;
+  visibility: hidden;
+}
+.openbtn{
+  display: none;
+  visibility: hidden;
+}
+
+.closebtn{
+  display: none;
+  visibility: hidden;
+}
+
+a {
+text-decoration: inherit;
+}
+
+.logo{
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  cursor: pointer;
+}
+.logo > img{
+  border-radius: 1rem;
+  margin: auto 1rem;
+  height: 100%;
+}
+.logo > h2{
+font-family: "Roboto";
+font-style: Light italic;
+font-weight: 300;
+font-size: 2rem;
+line-height: 0.5rem;
+display: flex;
+align-items: flex-end;
+color: #545776;
+}
+.navBut{
+  display: flex;
+  width: 30%;
+  align-items: center;
+  position: relative;
+  right: 2rem;
+}
+.navBut > a{
+  width: 50%;
+  margin: 1rem;
+  height: 40%;
+}
+.navBut > a > button:hover{
+  transition: all .5s ease;
+  color:#ffffff;
+  background-color:#1DBEB4;
+  opacity: 0.8;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+}
+button {
+  text-decoration: inherit;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 2px solid #1DBEB4;;
+  padding: 0.4em 1em;
+  color: #1DBEB4 ;
+  font-size: 1.2rem;
+  font-weight: 550;
+  font-family: inherit;
+  background-color: white;
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: space-between;
+  background-color: #1DBEB4;
+  color: white;
+}
+footer > h3{
+  padding: 2rem;
+
+}
+.redes{
+  display: flex;
+  padding: 3rem;
+  width: 20%;
+}
+.redes > svg{
+  width: 100%;
+  height: 70%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+form > input{
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  height: 4vh;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+form > button{
+  width: 50%;
+}
+.login{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #F9F9F9;
+}
+.login > form > button{
+  height: 4rem;
+}
+.login > form > button:hover{
+  transition: all .5s ease;
+  background-color: #109c93;
+  border: solid 3px #1DBEB4;
+}
+.login > form > label{
+  color: #383B58;
+  font-weight: bold;
+}
+#inputEmail{
+  color: #545776;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0.5rem;
+}
+form > h2{
+  color: #1DBEB4;
+}
+.input_wrapper{
+  width: 100%;
+}
+.input_wrapper > input{
+  color: #545776;
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  height: 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  background: URL('/public/images/eye-slash-regular.svg') no-repeat 515px 4px #ffff!important;
+}
+
+.register{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #F9F9F9;
+}
+.register > h2{
+  color: #1DBEB4;
+}
+.register  > p{
+  color: red;
+  font-size: 1.5rem;
+}
+.register > form > input{
+  height: 2.5rem;
+  color: #545776;
+  padding: 0;
+  margin: 0.5rem;
+}
+.register > form > label{
+  color: #383B58;
+  font-weight: bold;
+}
+.register > form > button{
+  height: 4rem;
+  margin-top: 2rem;
+}
+.register > form > button:hover{
+  transition: all .5s ease;
+  background-color: #109c93;
+  border: solid 3px #1DBEB4;
+}
+.login  > p{
+  color: red;
+  font-size: 1.5rem;
+}
+label{
+  align-self: self-start;
+  margin-bottom: 0.5rem;
+}
+.nom{
+  flex-direction: row;
+  width:50%;
+  margin: 1rem 1rem 1rem 0
+}
+.nom > input{
+  color: #545776;
+  font-size: 1.5rem;
+  width:100%;
+  height: 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+}
+.nom > label{
+  color: #383B58;
+  font-weight: bold;
+}
+.ape{
+  flex-direction: row;
+  width: 50%;
+  margin: 1rem 0 1rem 1rem 
+}
+input{
+  border: 0;
+}
+.ape > input{
+  color: #545776;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+}
+.ape > label{
+  color: #383B58;
+  font-weight: bold;
+}
+form > article{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+form > div{
+  display: flex;
+  padding: 1px;
+}
+form > button{
+  background-color: #1DBEB4;
+  color: white;
+}
+.mal{
+  border: 1px solid red
+}
+.bien{
+  border: 1px solid green;
+}
+.oculto{
+  display: none;
+  visibility: hidden;
+  width: 0%;
+  height: 0%;
+}
+
+#padre{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  left: 5rem;
+}
+nav > .oculto{
+  width: 0%;
+}
+#padre > .oculto{
+  width: 0%;
+  display: none;
+}
+#administrador{
+  position: relative;
+  height: 50%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+#administrador > a{
+  color: #383B58;
+  margin-bottom: 1rem;
+  margin-top: auto;
+  cursor: pointer;
+}
+#administrador > hr{
+  width: 1px;
+  border: solid 1px #1DBEB4;
+  height: 100%;
+  margin-left:2rem;
+  padding: 0;
+  background-color: #1DBEB4;
+  color: #1DBEB4;
+}
+#misReservas{
+  position: relative;
+  height: 50%;
+  width: 15rem;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+#misReservas > a{
+  color: #383B58;
+  margin-bottom: 1rem;
+  margin-top: auto;
+  cursor: pointer;
+}
+#misReservas > hr{
+  width: 1px;
+  border: solid 1px #1DBEB4;
+  height: 100%;
+  margin-left:2rem;
+  padding: 0;
+  background-color: #1DBEB4;
+  color: #1DBEB4;
+}
+
+#logueado{
+  width: 30%;
+  height: 40%;
+  margin: 3rem 5rem 3rem 1rem;
+  position: relative;
+  display: flex;
+}
+#logueado > h3{
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  position: relative;
+  display: flex;
+  height: 70px;
+  width: 70px;
+  margin: 0 1rem 0 1rem;
+  background-color: #545776;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+#logueado > div > font{
+  font-size: 1.4rem;
+}
+#logueado > div{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 1rem;
+}
+#cerrarSesion{
+  color: #545776;
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.busca{
+  background-color: #545776;
+  height: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.busc{
+  display: flex;
+  flex-direction: row;
+}
+.busca > h1{
+  color: #ffffff;
+  font-size: 2.3rem;
+}
+.busc{
+  width: 100%;
+  justify-content: center;
+}
+.busc > div{
+  background-color: #545776;
+  /* width: 30%; */
+  margin: 0px 10px;
+  border-radius: 10px;
+}
+.busc > .selectCiudades{
+  /* background-color: #F9F9F9; */
+  width: 30%;
+  margin: 0px 10px;
+  border-radius: 10px;
+}
+.busc > div > .oculto{
+  height: 0;
+  width: 0;
+}
+.errorCiudad{
+  margin-left: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: red;
+  display: flex;
+}
+.errorCiudad > p{
+  margin: 0;
+  margin-left: 0.5rem;
+  padding: 0;
+}
+.busc  > div > select{
+  height: 45px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  background: URL('/public/images/location-dot-solid.svg') no-repeat 10px 4px #ffffff !important;
+}
+.busc  > div > select > .ciudades{
+  text-align: center;
+  color: #383B58;
+  background-color: #F9F9F9;
+}
+.busc  > div > select > option{
+  color:#545776;
+  background-color:#EBEBEE;
+  font-size: 1.5rem;
+  font-weight:600;
+  font-family: 'Roboto', sans-serif;
+}
+.buscar{
+  text-decoration: inherit;
+  width: 15%;
+  height: 45px;
+  border-radius: 10px;
+  padding: 0.4em 1em;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 550;
+  font-family: inherit;
+  background-color: #1DBEB4;
+  cursor: pointer;
+  margin-left:  1rem;
+}
+
+input{
+  height: 38px;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+/* ESTILOS CALENDARIO */
+.calendario{
+  width: 100%;
+  height: 100%;
+}
+  .react-datepicker-popper > div > .react-datepicker > .react-datepicker__navigation--next{
+    background-color: #1DBEB4;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 1.2rem;
+    cursor: pointer;
+    margin-top: 0rem;
+    margin-right: 0rem;
+  }
+  .react-datepicker-popper > div > .react-datepicker{
+    width: 800px;
+    position: relative;
+    right: 8rem;
+  }
+  .react-datepicker-popper > div > .react-datepicker > .react-datepicker__navigation--previous{
+    background-color: #1DBEB4;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 1.2rem;
+    cursor: pointer;
+    margin-top: 0rem;
+    margin-left: 0rem;
+  }
+.react-datepicker-wrapper{
+    width: 30%;
+    height: 42.1px;
+    display: flex;
+  }
+  .react-datepicker__input-container{
+    background-color: #F9F9F9;
+    border-radius: 10px;
+  }
+.react-datepicker-wrapper > .react-datepicker__input-container > input{
+  text-align: center;
+    background: URL('/public/images/calendar-days-solid.svg') no-repeat 10px 5px #ffffff !important;
+  }
+  .react-datepicker__month-container{
+    background-color: white;
+  }
+  .react-datepicker__header{
+    background-color: #ffffff;
+    border: 0;
+  }
+  .react-datepicker__day-names > div{
+    margin: 7px;
+    font-weight: bold;
+    color: #383B58;
+  }
+  .react-datepicker__current-month{
+    color:#383B58
+  }
+  .react-datepicker__day--in-range{
+  background-color: #1DBEB4;
+}
+.react-datepicker__day{
+  border-radius: 50%;
+}
+.react-datepicker__week > div{
+  margin: 7px;
+  border-radius: 50%;
+}
+.react-datepicker{
+  color: #383B58;
+  font-family: 'Roboto', sans-serif;
+}
+.react-datepicker__day--today  {
+  background-color:#1DBEB4;
+  color: #fff;
+  border-radius: 50%;
+}
+.react-datepicker__day--disabled {
+  color:#383B58;
+}
+.react-datepicker__close-icon::after {
+  display: none;
+}
+.react-datepicker-popper > div > .react-datepicker > .react-datepicker__triangle::before{
+  display: none;
+}
+.react-datepicker-popper > div > .react-datepicker > .react-datepicker__triangle::after{
+  left: 7.6rem;
+}
+
+.cardd{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5rem 0.5rem;
+}
+.card{
+  display: flex;
+  width: 48%;
+  height: 340px;
+  margin: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 0;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.card:hover{
+  border: solid 3px #1DBEB4;
+  opacity: 0.8;
+  transition: all .3s ease;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+}
+.image-container {
+  width: 45%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.calificacion{
+  display: flex;
+  align-items: center;  
+  height: 10%;
+  position: relative;
+  font-size: 1.2rem;
+}
+.calificacion > p{
+  color: #383B58;
+  opacity: 0.6;
+  margin: 0;
+}
+.calificacion2 {
+  width: 30%;
+  margin: 0;
+  height: 0rem;
+  position: relative;
+  bottom: 1rem;
+  left: 21rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-align: right;
+}
+.calificacion2 > p{
+  margin: 0.5rem;
+}
+.calificacion2 > font{
+  margin: 0.5rem;
+  font-size: 1.4rem;
+  background-color: #383B58;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+}
+#stars{
+  color: #1DBEB4;
+  font-size: 1.2rem;
+  position: relative;
+  margin-left: 0.3rem;
+  bottom: 3px;
+  font-weight: bold;
+}
+.product-info{
+  font-family: 'Roboto', sans-serif;
+  color:#383B58;
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem 0.7rem 0rem 0.7rem;
+  justify-content: space-evenly;
+}
+.product-info > .info-producto{
+  height: 75%;
+  margin-top: 1rem;
+}
+.product-info > div{
+  position: relative;
+  bottom: 1rem;
+  height: 18%;
+}
+.product-info > div > .botones > button{
+  height: 100%;
+}
+.info-producto > div > h2{
+  margin: 0 0 auto 0;
+  font-weight:700;
+  font-size: 2rem;
+}
+.info-producto > .mostrarMas{
+  color: #1DBEB4;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.info-producto > span {
+  color: #383B58;
+  font-weight:normal;
+  font-size: 18px;
+}
+.info-producto > p {
+  color: #383B58;
+  font-weight:bold;
+  font-size: 1.3rem;
+  margin: 0;
+}
+.location{
+  height: 12%;
+  display: flex;
+  font-size: 1rem;
+}
+.location > span{
+  color: #1DBEB4;
+  font-weight: bolder;
+  margin: 1rem 0 0 0.5rem;
+}
+.location > svg{
+  position: relative;
+  margin: 0.6rem 0.5rem 0 0;
+  width: 20px;
+  height: 1.5rem;
+}
+.botones > button{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1.3rem;
+  background-color: #1DBEB4;
+  cursor: pointer;
+}
+.botones > button:hover{
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+  background-color: #109c93;
+}
+.caracteristicas{
+  margin: 1.5rem 0rem;
+}
+.caract{
+  margin-right: 0.3rem;
+  width: 8%;
+  height: 1.5rem;
+  color: #383B58;
+}
+.parr{
+  font-size: 12px;
+}
+.padreCat{
+  display: flex;
+  padding: 1rem;
+  width: 98%;
+}
+.cat{
+  background-color: #ffffff;
+}
+.alojamiento{
+  font-size: 2rem;
+  color: #383B58;
+  margin: 0 0 0 2rem;
+  padding: 1rem;
+}
+.recomendaciones{
+  font-size: 2rem;
+  color: #383B58;
+  margin: 0 auto 0 2rem;
+  padding: 1rem;
+}
+.padreCat > div{
+  cursor: pointer;
+  margin: 1rem;
+  width: 25%;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+}
+.padreCat > div:hover{
+  border: solid 3px #1DBEB4;
+  transition: all .5s ease;
+  opacity: 0.8;
+  width: 25.5%;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+}
+.seleccionado{
+  border: solid 3px #1DBEB4;
+  opacity: 0.8;
+  width: 25.5%;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+}
+
+.padreCat > div > img{
+  width: 100%;
+  border-radius:  1rem 1rem 0 0;
+}
+.padreCat > div > h3{
+  color: #383B58;
+  margin-left: 1rem;
+}
+.padreCat > div > p{
+  color: #383B58;
+  margin-left: 1rem;
+}
+#hola{
+  color:#9F9F9F;
+}
+#nya{
+  color: #1DBEB4;
+}
+#navBut{
+  display: none;
+}
+
+.deta{
+  width: 100%;
+}
+
+.barra{
+  background-color: #545776;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.barra2{
+  margin: 20px;
+  margin-left: 50px;
+  padding: 0.5rem;
+}
+
+.barra2 > h2{
+  margin: 0.5rem;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.barra2 > h4{
+  margin: 0.5rem;
+  font-weight:normal;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+.barra > a{
+  position: relative;
+  top: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 5rem;
+}
+.barra > a > svg{
+  height: 100%;
+}
+.caractDet{
+  height: 1.5rem;
+  color: #1DBEB4;
+}
+.fa-chevron-left{
+  width: 60%;
+  height: 50%;
+  color:#ffffff;
+}
+.location > svg{
+  margin-top: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.baja{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #EEEFF2;
+}
+
+.baja2{
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+  align-items: center;
+  width: 27%;
+}
+.baja2 > p{
+  font-family: 'Roboto', sans-serif;
+  color: #383B58;
+  font-weight: bold;
+}
+.baja2 > .caract{
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.baja3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+.baja3 > p{
+  font-size: 1.5rem;
+  margin: 0.7rem 2rem 0.5rem 0.5rem;
+  background-color: #545776;
+  color: white;
+  padding:  0.5rem 1rem;
+  border-radius: 0.8rem;
+}
+.caractPadre{
+  display: flex;
+}
+.caractPadre > svg{
+  margin: 1rem;
+}
+.caractPadre > p{
+  margin: 1rem;
+}
+.calen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.calen > h3{
+  color: #383B58;
+  font-size: 2rem;
+  align-self: flex-start;
+  margin-left: 3rem;
+}
+.calen2{
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  align-items: center
+  ;
+}
+.contenedor-calendario{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 100%;
+} 
+.modal{
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 150px;
+  background-color: #ffffff;  
+  padding: 1rem;
+  margin-right: 5rem;
+  color: #4F4F50;
+}
+.react-datepicker__navigation--next{
+  background-color: #1DBEB4;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 1.5rem;
+  cursor: pointer;
+  margin-top: 9rem;
+  margin-right: 1rem;
+}
+.react-datepicker__navigation--previous{
+  background-color: #1DBEB4;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 1.5rem;
+  cursor: pointer;
+  margin-top: 9rem;
+  margin-left: 1rem;
+}
+.modal > a{
+  width: 100%;
+}
+.modal > a > button{
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1rem;
+  background-color: #1DBEB4;
+  cursor: pointer;
+}
+.calendario-producto{
+  width: 90%;
+  /* margin-left: 2rem; */
+}
+.calendario-producto > div > .react-datepicker{
+  width: 100%;
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+.react-datepicker__month-container{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 45%;
+}
+.calen > div{
+  width: 100%;
+}
+
+.estrellas{
+  margin: 1rem;
+}
+.estrellas > svg{
+  height: 1.2rem;
+}
+.mapa{
+  width: 100%;
+  height: 800px;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color:#ffffff;
+}
+.mapa > h3{
+  margin-left: 3rem;
+  color: #383B58;
+  font-size: 2rem;
+}
+.mapa > hr{
+  background-color: #1DBEB4;
+  height: 2px;
+}
+.mapa > p{
+  margin-left: 3rem;
+  color: #4F4F50;
+  font-weight: bold;
+}
+.mapa > iframe{
+  width: 95%;
+  height: 100%;
+  align-self: center;
+  border-radius: 0.5rem;
+  border: 0;
+}
+.compar{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+.compar > div{
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.compar > div >svg{
+  margin: 1rem;
+  height: 2rem;
+  color: #383B58;
+}
+
+.picture{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.picmain{
+  width: 50%;
+  margin-right: 1rem;
+}
+
+.picmain > img{
+  height: 550px;
+  border-radius: 5px;
+  width: 100%;
+}
+.verGaleria{
+  position: relative;
+  font-size: 2rem;
+  margin-left: auto;
+  font-weight: bold;
+  display: flex;
+  justify-content: right;
+  text-align: center;
+  margin: 0rem;
+  padding: 1rem;
+  padding-right: 5rem;
+  background-color: #ffffff;
+}
+.verGaleria > p{
+  margin: 0;
+  text-decoration:underline;
+  padding: 0;
+  width: 8%;
+  cursor: pointer;
+  color: #1DBEB4;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+}
+.ocultarGaleria{
+  display: none;
+  width: 0px;
+  height: 0px;
+  transform: scale(0);
+  transition:.5s ease-in-out all;
+}
+#gale{
+  position: fixed;
+  transition: all .5s ease;
+  background-color:rgba(56,59,88, 0.5) ;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galeria{
+  width: 50%;
+  height: 70%;
+  margin: 0;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.galeria > div{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: flex;
+  background-color: #ffffff;
+  width: 500%;
+  height: 90%;
+  transition: all .5s ease;
+  transform: translateX(40%);
+}
+.galeria > div > img{
+  width: calc(100% / 5 - 2em);
+  height: 90%;
+  width: 90%;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+.galeria > .puntos{
+  margin: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.galeria > .puntos > .punto{
+  width: 1.5em;
+  height: 1.5em;
+  margin: 1rem;
+  background-color: #1DBEB4;
+  border-radius: 1rem;
+}
+.galeria > .puntos > .punto:hover{
+  background-color: #383B58;
+  transition: all .5s ease;
+}
+.galeria > .puntos > .activo{
+  background-color: #545776;
+  width: 2em;
+  height: 2em;
+  transition: all .5s ease;
+}
+.galeria > p{
+  background-color:#545776;
+  border: solid 1px #383B58;
+  color: #ffffff;
+  padding: 0.8rem  1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 9rem;
+  right: 30.5rem;
+  cursor: pointer;
+  opacity: 0.85;
+}
+.verGaleriaResponsive{
+  visibility: hidden;
+}
+.picgrilla{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  width: 830px;
+}
+
+.picgrilla > img{
+  width: 100%;
+  height: 270px;
+  border-radius: 5px;
+}
+
+.desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+.desc > div{
+  margin: 2rem;
+  width: 80%;
+}
+.desc > div > h3{
+  color: #383B58;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.desc > div > p{
+  font-size: 1.5rem;
+  color: #383B58;
+}
+
+.serv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.serv > h3{
+  color: #383B58;
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+.serv2{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  text-align: left;
+  margin: 20px;
+}
+
+.saber{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.saber > hr{
+  width: 100%;
+}
+.saber > h3{
+  color: #383B58;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-left: 3rem;
+}
+
+.saber2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+  margin-left: 3rem;
+}
+
+.saber2 > div{
+  width: 30%;
+  margin-bottom: 1rem;
+}
+
+.saber2 > div > h4{
+  color: #383B58;
+  font-size: 1.6rem;
+}
+.saber2 > div > p{
+  color: #383B58;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+}
+
+.saber > div >h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+hr{
+  height: 1px;
+  width: 100%;
+  color: #1DBEB4;
+  background-color: #1DBEB4;
+}
+.botonesPag{
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.botonesPag > p{
+  text-align: center;
+  background-color: #ffffff;
+  color: #1DBEB4;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.botonPag{
+  margin: 0 1rem;
+  color: #ffffff;
+  background-color: #1DBEB4;
+}
+.botonPag > a {
+  text-decoration: none;
+  color: #ffffff;
+} 
+.botonPag > a:hover{
+  color: #1DBEB4;
+}
+.botonPag:hover{
+  color: #1DBEB4;
+  background-color: #ffffff;
+}
+/* RESERVAS */
+
+.detalles{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.izquierda{
+  width: 70%;
+  margin: 0rem 0rem 1rem 0rem;
+}
+.formReserva{
+  width: 83.5%;
+}
+.formReserva > h3{
+  color: #383B58;
+  font-size: 2rem;
+  align-self: flex-start;
+  margin-left: 3rem;
+}
+.formReserva > form{
+  width: 100%;
+  display: flex;
+  margin-left: 3rem;
+  padding: 2.5rem;
+  border: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+}
+.formReserva > form > div{
+  display: flex;
+  width: 100%;
+} 
+.formReserva > form > div > div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+} 
+.formReserva > form > div > div > input{
+  margin: 1rem 0.5rem 1.5rem 0;
+  width: 90%;
+  background-color:#EBEBEE;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  padding: 0.5rem;
+  color:#545776;
+  font-size: 1rem;
+  font-weight:bold
+}
+.formReserva > form > div > div > label{
+  color: #383B58;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.calenReserva{
+  width: 100%;
+}
+.calenReserva > div > .react-datepicker{
+  width: 90%;
+  border: 0;
+  border-radius: 1rem;
+  margin-left: 3rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+}
+#completaAt{
+  color: red;
+  font-size: 1.2rem;
+}
+
+.horaLlegada{
+  width: 100%;
+}
+.horaLlegada > h3{
+  color: #383B58;
+  font-size: 2rem;
+  align-self: flex-start;
+  margin-left: 3rem;
+}
+.horario{
+  background-color: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  margin-left: 3rem;
+  border-radius: 1rem;
+  width: 85%;
+}
+.horario > div{
+  display: flex;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: #383B58 ;
+  font-weight: bold;
+}
+.horario > div > svg{
+  margin: 1rem 1rem 1rem 0;
+  height: 1.5rem;
+}
+.horario > div > #completaAt{
+  font-size: 15px;
+  width: 45%;
+}
+.horas{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.horas > p{
+  font-size: 1rem;
+} 
+.horas > select{
+  transition: all .5s ease;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border: 0 !important;
+  height: 50px;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color:#9F9F9F;
+  font-weight: bold;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: URL('/public/images/caret-down-solid.svg') no-repeat 480px 0px !important;
+} 
+
+.horas > select::-ms-expand{
+  display: none;
+}
+
+.horas > select > option{
+  color: #383B58;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+.derecha{
+  width: 30%;
+  margin: 0 1rem 1rem 0rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+}
+.derecha>article > h3{
+  margin: 2rem;
+  color: #383B58;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.derecha>article > img{
+  width: 100%;
+}
+.derecha > div{
+  margin: 2rem 1rem 1rem 1rem;
+}
+.derecha > div > p{
+  color: #9F9F9F;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.derecha > div > h3{
+  font-size: 1.5rem;
+  margin: 0;
+  color: #383B58;
+}
+.derecha > div > .location{
+  color: #383B58;
+  font-size: 1rem;
+}
+.checks{
+  margin-top: 3rem;
+}
+.checks > hr{
+  background-color: #818181;
+  height: 0px;
+}
+.checks > div{
+  margin: 2.5rem 1rem 2.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: #383B58;
+  font-weight: bold;
+}
+.botonReserva{
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1rem;
+  background-color: #1DBEB4;
+  cursor: pointer;
+  top: 9rem;
+}
+.botonReserva:hover{
+  background-color: #109c93;
+  opacity: 0.8;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+}
+.false{
+  color: #B00020;
+  background-color: #FAE0E0;
+  width: 29%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.false > svg{
+  height: 2rem;
+  margin: 1rem;
+}
+.exitoPadre{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #F9F9F9;
+  text-align: center;
+  color: #1DBEB4;
+}
+.exitoPadre > div{
+  background-color: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);  margin-left: auto;
+  padding: 3rem 5rem;
+  width: 30%;
+  height: 50%;
+  border-radius: 1rem;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.exitoPadre > div > img{
+  height: 8rem;
+  position: relative;
+  /* fill: #1DBEB4; */
+}
+.exitoPadre > div > h2{
+  font-weight: bold;
+}
+.exitoPadre > div > h3{
+  font-size: 1.5rem;
+  color: #383B58;
+}
+.exitoPadre > div > a > button{
+  position: relative;
+  width: 40%;
+  height: 60px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1rem;
+  background-color: #1DBEB4;
+  cursor: pointer;
+}
+.verMisReservas{
+  margin-left: 1rem;
+}
+.react-datepicker__day {
+  color: #383B58;
+  font-weight: bold;
+}
+.react-datepicker__day--disabled{
+  font-weight: lighter;
+  color: #818181;
+}
+
+.arrowProduct > svg{
+  position: relative;
+  bottom: 1rem;
+}
+.productoPadre{
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+}
+.productoPadre > h3{
+  color: #383B58;
+  font-size: 2rem;
+}
+
+.crearProducto{
+  background-color:#ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formProducto > form{
+  width: 100%;
+  display: flex;
+}
+.formProducto > form > div{
+  display: flex;
+  width: 100%;
+} 
+.formProducto > form > div > div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+} 
+.formProducto > form > div > div > input{
+  margin: 1rem 0.5rem 1.5rem 0.5rem;
+  height: 2.2rem;
+  width: 96%;
+  text-align: left;
+  padding: 0.5rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  color:#545776;
+  font-size: 1rem;
+  font-weight:bold
+}
+.formProducto > form > div > div > input::placeholder{
+  opacity: 0.5;
+}
+.formProducto > form > div > div > select{
+  margin: 1rem 0.5rem 1.5rem 0.5rem;
+  width: 98%;
+  height: 3.2rem;
+  text-align: left;
+  border: 0;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  color:#545776;
+  font-size: 1rem;
+  font-weight:bold;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.formProducto > form > div > div > select > option{
+  font-weight:bold;
+  font-size: 1.5rem;
+}
+.formProducto > form > div > div > label{
+  color: #383B58;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.formProducto > form > label{
+  color: #383B58;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.formProducto > form > textarea{
+  width: 100%;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  color: #383B58;
+  font-size: 1rem;
+  font-weight:bold;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.formProducto > form > textarea::placeholder{
+  /* padding: 0.5rem; */
+  color: #383B58;
+  font-weight: bold;
+}
+
+.formCaracteristica > h3{
+  color: #383B58;
+  font-size: 1.5rem;
+}
+.formCaracteristica > div{
+  width: 100%;
+  height: 25rem;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.formCaracteristica > div > div {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+  width: 10%;
+  margin: 1rem;
+  background-color: #EBEBEE;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.formCaracteristica > div > div > div{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.formCaracteristica > div > div > div > label{
+  position: relative;
+  bottom: 0.8rem;
+  color: #383B58;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+.formCaracteristica > div > div > div > svg{
+  width: 100%;
+  height: 3rem;
+  color:#383B58;
+}
+.formCaracteristica > div > div > div > input{
+  width: 50%;
+  height: 4.5rem;
+  text-align: left;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  /* background-image: URL("data:image/svg+xml,%3csvg viewBox='0 1 16 13.5' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e") ; */
+  appearance: none;
+  border: 5px solid #1DBEB4;
+}
+.formCaracteristica > div > div > div > input:hover{
+  transition: all .5s ease;
+  border: 5px solid #109c93;
+  color:#ffffff;
+  background-color:#1DBEB4;
+  opacity: 0.8;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+}
+.formCaracteristica > div > div > div > input:checked{
+  border: 5px solid #383B58;
+  transition: all .5s ease;
+  color:#ffffff;
+  background-color:#545776;
+  opacity: 0.8;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+}
+.formCaracteristica > div > div > div > input:checked::before{
+  content: "✔";
+  font-size: 4rem;
+  position: relative;
+  bottom: 1.5rem;
+  left: 0.4rem;
+}
+
+.formCaracteristica > div > button{
+  width: 30%;
+  color: #1DBEB4;
+  background-color:#F9F9F9;
+  padding: 0.5rem;
+  font-size:2rem;
+  height: 4rem;
+  margin-top: 2rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+}
+.formCaracteristica > div > button:hover{
+  transition: all .5s ease;
+  color: #F9F9F9;
+  background-color:#1DBEB4;
+}
+.formPolitica > h3{
+  color: #383B58;
+  font-size: 1.5rem;
+}
+.formPolitica > div{
+  display: flex;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  color:#383B58;
+  font-size: 1rem;
+  font-weight:bold;
+  border: 0;
+  border-radius: 0.5rem;
+}
+.formPolitica{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.formPolitica  > button{
+  width: 30%;
+  color: #1DBEB4;
+  background-color:#F9F9F9;
+  padding: 0.5rem;
+  font-size:2rem;
+  height: 4rem;
+  margin-top: 3rem;
+  position: relative;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formPolitica  > button:hover{
+  transition: all .5s ease;
+  color: #F9F9F9;
+  background-color:#1DBEB4;
+}
+.formPolitica > div > div{
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 30%;
+}
+.formPolitica > div > div > h4{
+  margin-left: 1.5rem;
+  font-size: 1.4rem;
+}
+.formPolitica > div > div > div{
+  display: flex;
+  flex-direction: column;
+}
+.formPolitica > div > div > div > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formPolitica > div > div > div > .ocultarInput{
+  display: none;
+}
+.formPolitica > div > div > div > div > button{
+  width: 11%;
+  height: 3.3rem;
+  font-size: 2.5rem;
+  padding: 0;
+  color: #F9F9F9;
+  background-color: #1DBEB4;
+}
+
+.formPolitica > div > div > div > div > .borrarInput1{
+  background-color: #545776;
+  border: solid #383B58;
+  padding: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+.formPolitica > div > div > div > div > .borrarInput2{
+  background-color: #545776;
+  border: solid #383B58;
+  padding: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.formPolitica > div > div > div > div > .borrarInput3{
+  background-color: #545776;
+  border: solid #383B58;
+  padding: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.formPolitica > div > div > div > div > .borrarInput4{
+  background-color: #545776;
+  border: solid #383B58;
+  padding: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+.formPolitica > div > div > div > div > .borrarInput5{
+  background-color: #545776;
+  border: solid #383B58;
+  padding: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+.formPolitica > div > div > div > div > .borrarInput6{
+  background-color: #545776;
+  border: solid #383B58;
+  padding: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+.formPolitica > div > div > div > div > .borrarInput7{
+  background-color: #545776;
+  border: solid #383B58;
+  padding: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+.formPolitica > div > div > div > div > .borrarInput8{
+  background-color: #545776;
+  border: solid #383B58;
+  padding: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+.formPolitica > div > div > div > div > .borrarInput9{
+  background-color: #545776;
+  border: solid #383B58;
+  padding: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+.formPolitica > div > div > div > div > label{
+  margin-left: 1.5rem;
+}
+.formPolitica > div > div > div > div > input{
+  width: 90%;
+  height: 3rem;
+  margin: 0.5rem 1rem; 
+  text-align: left;
+  padding-left: 1rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  color:#545776;
+}
+
+.formImagen > h3{
+  color: #383B58;
+  font-size: 1.5rem;
+}
+
+.formImagen > div > .ocultarInput{
+  display: none;
+}
+.formImagen > div {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+}
+.formImagen > div > button{
+  width: 30%;
+  color: #1DBEB4;
+  background-color:#F9F9F9;
+  padding: 0.5rem;
+  font-size:2rem;
+  height: 4rem;
+  position: relative;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formImagen > div > button:hover{
+  transition: all .5s ease;
+  color: #F9F9F9;
+  background-color:#1DBEB4;
+}
+
+.formImagen > div > div{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  background-color: #EBEBEE;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+}
+.formImagen > div > div > input{
+  width: 92%;
+  height: 3.5rem;
+  font-size: 1rem;
+  text-align: left;
+  color: #383B58;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+.formImagen > div > div > input::placeholder{
+  color: #383B58;
+  font-size: 1.1rem;
+}
+.formImagen > div > div > .borrarInput10{
+  background-color: #545776;
+  border: solid #383B58;
+}
+.formImagen > div > div > .borrarInput11{
+  background-color: #545776;
+  border: solid #383B58;
+}
+.formImagen > div > div > .borrarInput12{
+  background-color: #545776;
+  border: solid #383B58;
+}
+.formImagen > div > div > .borrarInput13{
+  background-color: #545776;
+  border: solid #383B58;
+}
+.formImagen > div > div > .borrarInput14{
+  background-color: #545776;
+  border: solid #383B58;
+}
+.formImagen > div > div > button{
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #F9F9F9;
+  background-color:#1DBEB4;
+  padding: 0rem;
+  font-size: 3rem;
+}
+
+.crearProducto > button{
+  width: 50%;
+  color: #F9F9F9;
+  background-color:#1DBEB4;
+  padding: 0.5rem;
+  font-size:2rem;
+  height: 4rem;
+  margin-top: 5rem;
+  position: relative;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.crearProducto > .botonConfirmar{
+  background-color: #ffffff;
+  color: #1DBEB4;
+}
+.crearProducto  > button:hover{
+  transition: all .5s ease;
+  color: #F9F9F9;
+  background-color:#109c93;
+}
+
+.padreCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.padreCard > #reservas{
+  width: 100%;
+}
+.notFound{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40%;
+  height: 60%;
+  background-color: #F9F9F9;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.padreCard > .oculto{
+  display: none;
+  height: 0px;
+}
+.notFound > h1{
+  color: #383B58;
+}
+.notFound > img{
+  width: 30%;
+}
+.notFound > a > button{
+  color: #F9F9F9;
+  background-color: #1DBEB4;
+  padding: 2rem;
+}
+
+/* RESPONSIVE TABLET */
+
+@media only screen and (max-width: 770px) {
+  main{
+    width: 100%;
+  }
+  .react-datepicker-popper > div > .react-datepicker{
+    width: 400px;
+    position: relative;
+    right: 2.5rem;
+  }
+  .react-datepicker-popper > div > .react-datepicker > .react-datepicker__month-container{
+    position: relative;
+    width: 100%;
+    right: 3rem;
+  }
+  /* .logo{
+    width: 10%;
+  } */
+  .logo > h2{
+    visibility: hidden;
+    display: none;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+  }
+  button{
+    height: 50%;
+  }
+  .navBut{
+    position: relative;
+    width: 150%;
+    height: 100%;
+  }
+  .navBut > .oculto{
+    width: 0px;
+    height: 0px;
+  }
+  nav > .oculto{
+    display: none;
+    width: 0%;
+  }
+  nav > .navBut > button{
+    width: 70%;
+    height: 100%;
+  }
+  nav > .navBut > a > button{
+    width: 100%;
+    height: 100%;
+  }
+  #padre{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    left: -3rem;
+  }
+  .logo{
+    width: 15vw;
+  }
+  .logo > img{
+    width: 80%;
+    height: 40%;
+  }
+  .busc{
+    width: 100%;
+  }
+  .busca{
+    width: 100%;
+  }
+  .busca > h1{
+    font-size: 2rem;
+  }
+  .compar > div > .verGaleriaResponsive{
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    /* top: 1rem;  */
+    font-weight: bold;
+    color: #1DBEB4;
+    visibility: visible;
+    font-size: 2rem;
+    color: #1DBEB4;
+  }
+.buscar{
+  font-size: 14px;
+  margin-left: 0.2rem;
+}
+  .cat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .padreCat{
+    padding: 0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .padreCat>div{
+    width: 46%;
+    margin: 0.5rem;
+  }
+  .cardd{
+    width: 100%;
+    margin: 1rem;
+  }
+  .card{
+    width: 95%;
+    height: 280px;
+  }
+
+  .image-container{
+    height: 100%;
+    width: 45%;
+  }
+  .product-info{
+    height: 100%;
+  }
+  .info-producto{
+    width: 100%;
+    height: 80%;
+  }
+  .info-producto > p {
+    color: #383B58;
+    font-weight:bold;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .calificacion{
+    font-size: 1.2rem;
+  }
+  #stars{
+    font-size: 1rem;
+  }
+  .calificacion2{
+    left: 17rem;
+    font-size: 1rem;
+  }
+  .info-producto > div > h2{
+    font-size: 1.8rem;
+  }
+  .location{
+    font-size: 0.8rem;
+  }
+  .location > svg{
+    height: 1.2rem;
+    margin: 0.5rem 0 0.5rem;
+  }
+  .location > span{
+    font-size: 0.7rem;
+  }
+  .caract {
+    margin: 0;
+    width: 2%;
+    height: 1.2rem;
+  }
+  .info-producto > span{
+    font-size: 1rem;
+  } 
+  .product-info > div{
+    height: 20%;
+  }
+  .redes{
+    margin: 0 3rem 0 0;
+    width: 30%;
+  }
+  .redes > img{
+    width: 12%;
+  }
+  form{
+    width: 75%;
+    align-items: center;
+  }
+  form>article{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  form>article>.nom{
+    width: 100%;
+    margin: 1rem 0px;
+  }
+  form>article>.ape{
+    width: 100%;
+    margin: 1rem 0px;
+  }
+  form>button{
+    width: 100%;
+    margin: 2rem 0px;
+  }
+
+  #logueado{
+    margin: 0;
+    width: 50%;
+  }
+  #logueado > div{
+    margin-top: 0rem;
+  }
+  #logueado > div > font{
+    font-size: 1rem;
+  }
+  #logueado > h3{
+    margin: 0.5rem;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
+  }
+  .barra > a {
+    position: relative;
+    right: 2rem;
+    top: 2rem;
+    height: 5rem;
+  }
+  .barra > a > svg{
+    height: 100%;
+  }
+  /* .picture{
+    display: none;
+  } */
+  .picmain{
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: 1.5rem;
+  }
+  .picgrilla{
+    display: none;
+    visibility: hidden;
+  }
+  #gale{
+    display: flex;
+    visibility:visible;
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    position: relative;
+  }
+  .galeria{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border-radius: 0rem;
+  }
+  .galeria > div{
+    margin: 0;
+    height: 75%;
+  }
+  .galeria > div > img{
+    height: 100%;
+    margin: 0;
+    border-radius: 0rem;
+  }
+  .galeria > .puntos{
+    height: 20%;
+    padding: 0;
+  }
+  .galeria > p{
+    display: none;
+  }
+
+  .saber{
+    width: 100%;
+  }
+  .saber2{
+    position: relative;
+    width: 90%;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .saber2 > div{
+    width: 90%;
+    display: grid;
+    margin: 30px;
+  }
+
+  .saber2 > div > h4{
+    margin: 0px;
+    width: 100%;
+  }
+
+  .serv2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .serv2 > div{
+    display: flex;
+    flex-direction: row;
+  }
+  .busc  > div > select > .ciudades{
+    font-size: 1rem;
+  }
+  .caract{
+    width: 10%;
+  }
+  .contenedor-calendario{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  } 
+  .calen2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .calendario-producto{
+    width: 95%;
+    margin: 0;
+  }
+  .react-datepicker__month-container{
+    margin-top: 1rem;
+    width: 40%;
+    margin: 1rem 0 1rem 3rem;
+    position: relative;
+  }
+  .react-datepicker__navigation--next{
+    background-color: #1DBEB4;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+  }
+  .react-datepicker__navigation--previous{
+    background-color: #1DBEB4;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  .modal{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 70%;
+    background-color: #ffffff;  
+    padding: 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .modal > button{
+    height: 3rem;
+  }
+  .baja{
+    width: 100%;
+  }
+  .deta{
+    width: 100%;
+  }
+  .hotelPadre{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .verGaleria{
+    display: none;
+    visibility: hidden;
+  }
+  footer{
+    height: 130px;
+    width: 100%;
+  }
+  .desc{width: 100%;}
+  .desc > div{width: 100%;}
+  .desc > div > h3{
+    color: #383B58;
+    font-size: 30px;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .desc > div > p{
+    width: 90%;
+  }
+  .desc > div{
+    width: 90%;
+  }
+  .formReserva{
+    width: 90%;
+  }
+  .izquierda{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+  }
+  .formReserva > form{
+  margin: 0;
+  }
+  .calen > h3{
+    font-size: 25px;
+    text-align: start;
+  }
+  .calenReserva > div > .react-datepicker{
+    margin: 0;
+    width: 100%;
+  }
+  .calenReserva > div > .react-datepicker > .react-datepicker__month-container{
+    right: 0rem;
+  }
+  .horario{
+    margin: 0;
+    width: 90%;
+  }
+  .horas > select > option{
+    font-size: 0.5rem;
+  }
+  .detalles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+  .derecha{
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    width: 93%;
+    height: 20rem;
+    margin: 0 0rem 1rem 0rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  }
+  .derecha >article >h3{
+    z-index: 1;
+    margin: 1.2rem;
+    color: #383B58;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .derecha > article{
+    width: 60%;
+    height: 100%;
+    margin-bottom: 10rem;
+  }
+  .derecha > div{
+    width: 40%;
+  }
+  .derecha >article> img{
+    width: 100%;
+    height: 80%;
+  }
+  .derecha > div{
+    text-align: left;
+    width: 50%;
+    height: 8rem;
+    margin: 0rem 0rem 4rem 1rem;
+  }
+  .derecha > div > p{
+    color: #9F9F9F;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .derecha > div > h3{
+    font-size: 1.5rem;
+    margin: 0;
+    color: #383B58;
+  }
+  .derecha > div > .location{
+    color: #383B58;
+    font-size: 1rem;
+  }
+  .derecha > div > .location > p{
+    font-size: 0.8rem;
+  }
+  .checks{
+    margin-top: 1rem;
+  }
+  .checks > hr{
+    background-color: #818181;
+    height: 0px;
+  }
+  .checks > div{
+    margin: 0rem 1rem 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #383B58;
+    font-weight: bold;
+  }
+  .botonReserva{
+    position: relative;
+    top: 0rem;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #1DBEB4;
+    cursor: pointer;
+  }
+  .horas > select > option{
+    color: #383B58;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+  .false{
+    color: #B00020;
+    background-color: #FAE0E0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .false > svg{
+    height: 2rem;
+    margin: 1rem;
+  }
+
+  #administrador > a{
+    font-size: 18px;
+  }
+  #misReservas > a{
+    font-size: 18px;
+  }
+  .baja2 > p{
+    margin-left: 10px;
+  }
+  .exitoPadre > div{
+    width: 50%;
+  }
+  .exitoPadre > div > a{
+    margin-left: 1rem;
+  }
+  .verMisReservas{
+    position: relative;
+    bottom: 0.5rem;
+  }
+  .notFound{
+    width: 60%;
+  }
+  .notFound > a > button{
+    display: flex;
+    align-items: center;
+  }
+  .formCaracteristica > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .formCaracteristica > div > div {
+    width: 50%;
+  }
+  .formCaracteristica > div > div > div > input {
+    width: 30%;
+  }
+  .formCaracteristica > div > button{
+    margin: 30px;
+    width: 60%;
+  }
+  .formPolitica > div{
+    display: flex;
+    flex-direction: column;
+  }
+  .formPolitica > div > div{
+    width: 90%;
+  }
+  .formProducto > form > div > div > select > option{
+    font-size: 12px;
+  }
+
+}
+
+
+/* RESPONSIVE MOBILE */
+
+
+@media only screen and (max-width: 420px){
+  .logo > h2{
+    margin: 0px;
+    display: none;
+  }
+  .logo{
+    margin: 0px;
+    padding: 0px;
+    width: 40%;
+    height: 20%;
+  }
+  .baja2 > p{
+    font-size: 12px;
+  }
+  a{
+    margin: 0px;
+    width: 180px;
+  }
+  #navBut > a > button{
+    font-size: 13px;
+  }
+
+  body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo > img{
+    height: 100%;
+    width: 100%;
+  }
+  .busca > h1{
+    font-size: 2rem;
+  }
+  .busc > div{
+    width: 90%;
+  }
+  .busc > .selectCiudades{
+    width: 90%;
+    margin: 0px;
+    height: 4rem;
+    margin-left: 0.5rem;
+    /* font-size: 1rem; */
+  }
+  .busc  > div > select > .ciudades{
+    font-size: 0.9rem;
+  }
+  .react-datepicker-popper > div > .react-datepicker{
+    width: 400px;
+    position: relative;
+    right: 0rem;
+  }
+  .react-datepicker-popper > div > .react-datepicker > .react-datepicker__month-container{
+    position: relative;
+    width: 100%;
+    right: 3rem;
+  }
+  .react-datepicker-popper > div > .react-datepicker > .react-datepicker__triangle::before{
+    display: none;
+  }
+  .react-datepicker-popper > div > .react-datepicker > .react-datepicker__triangle::after{
+    display: none;
+  }
+  .react-datepicker__input-container >.react-datepicker__close-icon::after{
+    display: none;
+  }
+  .busc{
+    margin-left: 1rem;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .bus{
+    width: 96%;
+    height: 3.2rem;
+    margin: 0.5rem 0rem;
+    text-align: left;
+  }
+  input{
+    width: 94%;
+    height: 3.2rem;
+    margin-right: 1rem;
+    text-align: left;
+  }
+  .buscar{
+    margin: 0.4rem 0.2rem 0;
+    width: 92%;
+    height: 3.2rem;
+  }
+  .react-datepicker-wrapper{
+    width: 100%;
+  }
+  .busca{
+    height: 375px;  
+    text-align: center;
+  }
+  .padreCat{
+    margin:0 ;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+  }
+  .padreCat>div{
+    width: 90%;
+  }
+  .padreCat > div:hover{
+    border: solid 3px #1DBEB4;
+    opacity: 0.8;
+    width: 90%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+  }
+  .seleccionado{
+    border: solid 3px #1DBEB4;
+    opacity: 0.8;
+    width: 90%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+  }
+  .alojamiento{
+    text-align: center;
+  }
+  .recomendaciones{
+  color: white;
+  }
+  .cardd{
+    margin: 0;
+    width: 100%;
+    
+  }
+  .card{
+    width: 90%;
+    /* height: 100%; */
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px 20px 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+  .image-container{
+    width: 100%;
+    height: 276px;
+  }
+  .calificacion{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .calificacion > p{
+    font-size: 1.2rem;
+    color: #383B58;
+    opacity: 0.6;
+    margin: 0;
+  }
+  .calificacion2 {
+    width: 30%;
+    margin: 0;
+    height: 0rem;
+    position: relative;
+    bottom: 1rem;
+    left: 16rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    text-align: right;
+  }
+  .calificacion2 > p{
+    font-size: 0.8rem;
+  }
+  .calificacion2 > font{
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    background-color: #383B58;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+  }
+  #stars{
+    color: #1DBEB4;
+    font-size: 1rem;
+    position: relative;
+    margin-left: 0.3rem;
+    bottom: 3px;
+    font-weight: bold;
+  }
+  .product-info{
+    height: 50%;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .product-info > .info-producto{
+    height: 75%;
+    margin-top: 1rem;
+  }
+  .product-info > div{
+    position: relative;
+    bottom: 1rem;
+    height: 18%;
+  }
+  .product-info > div{
+    padding: 0.5rem;
+    width: 95%;
+  }
+  .info-producto > div > h2{
+    position: relative;
+    left: 0.5rem;
+    text-align: left;
+    margin-top: 0.5rem;
+    font-weight:700;
+    font-size: 1.8rem;
+  }
+  .product-info > div > .botones > button{
+    position: relative;
+    top: 1.2rem;
+    width: 95%;
+  }
+  .info-producto{
+    text-align: left;
+  }
+  .location{
+    height: 12%;
+    margin-left: 10px;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+  }
+  .location > span{
+    color: #1DBEB4;
+    font-weight: bolder;
+    margin: 1rem 0 0 0.5rem;
+    font-size: 0.7em;
+  }
+  .location > svg{
+    margin: 0.6rem 0.2rem 0 0;
+    height: 1.2rem;
+  }
+  .botones{
+    width: 95%;
+    margin: 10px;
+  }
+  .info-producto > .mostrarMas{
+    color: #1DBEB4;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+  .info-producto > span {
+    color: #383B58;
+    font-weight:normal;
+    font-size: 18px;
+    margin-left: 0.5rem;
+  }
+  .botones > button{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1.3rem;
+    background-color: #1DBEB4;
+    cursor: pointer;
+  }
+  .caracteristicas{
+    display: none;
+    visibility: hidden;
+  }
+  
+  .picmain{
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 20rem;
+    position: absolute;
+    top: 22.5rem;
+  }
+  .picmain > img{
+    height: 20rem;
+  }
+  .picgrilla{
+    display: none;
+    visibility: hidden;
+  }
+  #gale{
+    display: flex;
+    visibility:visible;
+    width: 100%;
+    height: 8%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    position: relative;
+  }
+  .galeria{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border-radius: 0rem;
+  }
+  .galeria > div{
+    margin: 0;
+    height: 75%;
+  }
+  .galeria > div > img{
+    height: 100%;
+    margin: 0;
+    border-radius: 0rem;
+  }
+  .galeria > .puntos{
+    height: 20%;
+    padding: 0;
+  }
+
+  .galeria > p{
+    display: none;
+  }
+  .verGaleriaResponsive{
+    visibility: visible;
+  }
+  .botones{
+    width: 95%;
+    height: 10rem;
+    margin: 10px;
+    position: relative;
+    bottom: 1rem;
+  }
+  .padreCat > div > h3{
+    margin: 0px;
+  }
+
+  .calendario-producto{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  .contenedor-calendario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  } 
+  .calendario-producto > div > .react-datepicker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .calen2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    background-color: #ffffff;  
+    padding: 1rem;
+    margin: 0;
+  }
+  .modal > button{
+    height: 3rem;
+  }
+  .react-datepicker__month-container{
+    width: 100%;
+    position: relative;
+    right: 1.5rem;
+    border-radius: 1rem;
+  }
+  .react-datepicker__navigation--next{
+    background-color: #1DBEB4;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+  }
+  .react-datepicker__navigation--previous{
+    background-color: #1DBEB4;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  .barra2{
+    margin-left: 15px;
+    text-align: left;
+  }
+  .barra2 > h2{
+    font-size: 1.5rem;
+  }
+  .barra2 > h4{
+    font-size: 1.2rem;
+  }
+  .barra > a{
+    top: 1.6rem;
+    right: 2.5rem;
+    width: 2rem;
+  }
+  .barra > a > svg{
+    height: 100%;
+  }
+  .horario > div > #completaAt{
+    font-size: 15px;
+    width: 100%;
+  }
+  
+  
+  footer{
+    bottom: 0;
+    height: 80px;
+  }
+  footer > h3{
+    font-size: 0.8rem;
+    padding: 10px;
+    width: 50%;
+  }
+  .redes{
+    padding: 0.8rem;
+    margin: 0;
+    width: 50%;
+  }
+  .redes > svg{
+    height: 50%;
+    width: 100%;
+    margin: 0.5rem;
+  }
+  #navBut {
+    height: 100%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #1DBEB4; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .openbtn{
+    display: flex;
+    visibility: visible;
+    width: 45px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+    color: #545776;
+    border: none;
+  }
+  .closebtn {
+    position: absolute;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    left: 0;
+    margin: 1rem;
+    top: 0;
+    font-size: 30px;
+    font-weight: bold;
+    visibility: visible;
+    color: white;
+  }
+  #navBut>a>button{
+    margin-top: 170px;
+  }
+  #hola{
+    color:white;
+  }
+  #nya{
+    color:#383B58;
+    font-weight: bold;
+  }
+  #logueadoMob{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 90%;
+  }
+  #logueadoMob > div > font{
+    font-size: 1.4rem;
+  }
+  #logueadoMob > div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: end;
+    margin: 1rem 0 0 0;
+    width: 100%;
+  }
+  #logueadoMob > div > h3{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-size: 1.8rem;
+    position: relative;
+    display: flex;
+    background-color: #545776;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0.5rem 6.5rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+  #cerrarSesion{
+    visibility: hidden;
+    display: none;
+  }
+  #padre{
+    display: none;
+  }
+  #padreMob{
+    width: 50%;
+    margin: 0 0 0 auto;
+  }
+  .redesMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: end;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    padding:  2rem 0 3.5rem 0;
+    height: 60%;
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .redesMenu > hr{
+    position: relative;
+    width: 90%;
+    border: 1px solid #383B58;
+    background-color:#383B58;
+  }
+  .redesMenu > div{
+    display: flex;
+    position: relative;
+    right: 3rem;
+  }
+  .redesMenu > div > font{
+    padding: 0 0 0 5px;
+  }
+  .redesMenu > div > a{
+    text-decoration: none;
+    color: #383B58;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    position: relative;
+    bottom: 0rem;
+    left: 2rem;
+  }
+  .redesMenu > .links{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .redesMenu > div >  #administrador{
+    margin: 0;
+    padding: 0;
+    height: 3rem;
+  }
+  .redesMenu > div >  #misReservas{
+    margin: 0;
+    padding: 0;
+    height: 3rem;
+    width: 40%;
+  }
+  .redesMenu > div > .oculto{
+    width: 0%;
+    height: 0%;
+  }
+  #menu{
+    position: relative;
+    top: 7rem;
+    left: 9.5rem;
+    color: white;
+    font-size: 2rem;
+  }
+  .redes{
+    left: 0.5;
+    width: 50%;
+  }
+  .visible{
+    display: flex;
+    visibility: visible;
+  }
+  .redesMenu > .redes > svg{
+    color: #383B58;
+    width: 25%;
+    margin: auto 1rem
+  }
+
+  .navBut{
+    display: none;
+    visibility: hidden;
+  }
+  .register{
+    height: 74.6vh;
+    margin:1rem 0 0rem 0 ;
+  }
+  .desc{
+    text-align: left;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .desc > div {
+    margin: 0px;
+  }
+  .desc > div > h3{
+    margin: 0px;
+  }
+  .saber2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .saber2 > div > h4{
+    font-size: 25px;
+    width: 350px;
+  }
+  .saber > h3{
+    text-align: left;
+    margin-left: 0.5rem;
+  }
+
+  .serv > h3{
+    text-align: left;
+  }
+
+  .botones > button{
+    width: 100px;
+    margin-top: 10px;
+  }
+  .desc{
+    text-align: left;
+  }
+  .desc > div > h3{
+    font-size: 25px;
+    position: relative;
+    width: 70%;
+    left: 1rem;
+  }
+  .desc > div > p{
+    font-size: 1rem;
+    position: relative;
+    left: 1rem;
+  }
+
+  .serv > h3{
+    margin: 0;
+    font-size: 25px;
+    margin: 1rem 1.5rem;
+  }
+  
+  .mapa{
+    text-align: start;
+  }
+  .mapa > h3{
+    margin-left: 0.5rem;
+  }
+  .mapa > p{
+    margin-left: 0.5rem;
+  }
+  .detalle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .formReserva > h3{
+    font-size: 25px;
+    text-align: start;
+  }
+  .formReserva > form {
+    width: 90%;
+    margin-left: 0rem;
+    padding: 2.3rem;
+  }
+  .formReserva > form > div{
+    display: flex;
+    flex-direction: column;
+  } 
+  .formReserva > form > div > div > input{
+    margin: 1rem 0.5rem 1.5rem 0;
+    width: 90%;
+    height: 25px;
+    background-color:#EBEBEE;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    padding: 0.5rem;
+    color:#545776;
+    font-size: 1rem;
+    font-weight:bold
+  }
+  .formReserva > form > div > div > label{
+    color: #383B58;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .calen > h3{
+    font-size: 25px;
+    text-align: start;
+  }
+  .calenReserva > div > .react-datepicker{
+    width: 100%;
+  }
+  .calenReserva > div > .react-datepicker > .react-datepicker__month-container{
+    right: 3rem;
+  }
+  .horaLlegada > h3{
+    font-size: 25px;
+    text-align: start;
+  }
+  .horario{
+    width: 85%;
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .horario > div > svg{
+    margin-right: 0.5rem;
+  }
+  .horario > div > p{
+    font-size: 1rem;
+  }
+  .horas{
+    width: 100%;
+  }
+  .horas > select > option{
+    font-size: 1rem;
+  }
+  .saber > h3{
+    font-size: 25px;
+    text-align: start;
+  }
+  .saber2 > div > h4{
+    font-size: 20px;
+    text-align: start;
+  }
+  .saber2 > div > p{
+    font-size: 15px;
+  }
+  .exitoPadre{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #F9F9F9;
+    text-align: center;
+    color: #1DBEB4;
+  }
+  .exitoPadre > div{
+    background-color: #ffffff;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);  margin-left: auto;
+    padding: 3rem;
+    width: 70%;
+    height: 40%;
+    border-radius: 1rem;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .exitoPadre > div > svg{
+    height: 3.5rem;
+    position: relative;
+    left: 1rem;
+  }
+  .exitoPadre > div > h2{
+    font-weight: bold;
+  }
+  .exitoPadre > div > h3{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #383B58;
+  }
+  .exitoPadre > div > a > button{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #1DBEB4;
+    cursor: pointer;
+  }
+  .recomendaciones{
+    color: #383B58;
+    margin: 0;
+  }
+  .detalles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+  .derecha{
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+    height: 40rem;
+    margin: 0 0rem 1rem 0rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  }
+  .derecha > article{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+  }
+  .derecha > article > h3{
+    margin: 1.2rem;
+    text-align: left;
+    color: #383B58;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .derecha > article > img{
+    width: 100%;
+  }
+  .derecha > div{
+    width: 100%;
+    height: 50%;
+    text-align: left;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+  .derecha > div > p{
+    color: #9F9F9F;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .derecha > div > h3{
+    font-size: 1.3rem;
+    margin: 0;
+    color: #383B58;
+  }
+  .derecha > div > .location{
+    color: #383B58;
+    font-size: 1rem;
+  }
+  .derecha > div > .location > p{
+    margin-bottom: 0;
+  }
+  .checks{
+    margin: 0;
+    }
+  .checks > hr{
+    background-color: #818181;
+    height: 0px;
+  }
+  .checks > div{
+    margin: 0rem 1rem 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #383B58;
+    font-weight: bold;
+  }
+  .checks > div > p{
+    margin: 0.5rem 0rem;
+  }
+  .botonReserva{
+    position: relative;
+    top: 0rem;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #1DBEB4;
+    cursor: pointer;
+  }
+  .formProducto > form > div{
+    display: flex;
+    flex-direction: column;
+  }
+  .productoPadre{
+    margin: 1rem;
+  }
+  .formProducto > form > div > div > select{
+    width: 100%;
+  }
+  .formCaracteristica > div > div{
+    width: 50%;
+  }
+  .formCaracteristica > div > button{
+    width: 80%;
+  }
+  .formPolitica > button{
+    width: 80%;
+  }
+  .formImagen > div > button{
+    width: 80%;
+  }
+}
